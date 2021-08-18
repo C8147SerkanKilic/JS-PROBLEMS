@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;      
+    background-color: blue;
+    height: 100vh;
+    
+
+}
+.time{
+    background-color: aqua;
+    width: 600px;
+    height: 500px;
+    border:#111 inset 50px;
+    text-align: center;
+    font-size: 40px;
+    vertical-align: center;
+    display: inline-block;
+
+    
+}
