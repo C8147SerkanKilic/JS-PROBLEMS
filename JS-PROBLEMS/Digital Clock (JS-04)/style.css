@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
    
 }
 body{
@@ -11,18 +12,17 @@ body{
     display: flex;      
     background-color: blue;
     height: 100vh;
-    
+
 
 }
 .time{
-    background-color: aqua;
-    width: 600px;
-    height: 500px;
-    border:#111 inset 50px;
+    margin:50%;
+    width: 500px;
+    height: 200px;
+    border:#111 inset 60px;
     text-align: center;
     font-size: 40px;
-    vertical-align: center;
-    display: inline-block;
-
+    vertical-align: center; 
+    color:white;
     
 }
