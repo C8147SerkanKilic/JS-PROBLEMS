@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
+        //intWithinBounds(3, 1, 9) ➞ true
+        //intWithinBounds(6, 1, 6) ➞ false
+        //intWithinBounds(4.5, 3, 8) ➞ false
+//--------------------------------1.YOL
+        
+        function intrange (){
+        let a = Number(prompt("Sayıyı giriniz"));
+        let b = Number(prompt("Sayının alt sınırını giriniz"))
+        let c = Number(prompt("Sayının üst sınırını giriniz"))
+        
+             if (String(a).split("").includes(".")){
+                return "Lütfen tam sayı giriniz"
+             }
+             else if (a >= b && a < c){
+                 return "Sayı girdiğiniz sınırlar içerisinde"
+             }
+             else{
+                return "Sayı girdiğini sınırlar içerisinde değil"
+             }                   
+        }
+        console.log(intrange())
+//-----------------------------------2.YOL
+// function intrange (a,b,c){
+//    const num =  String(a).split("").includes(".") ? false : true
+//    return a >= b && a < c && num ? true : false
+// }
+
+//------------------------------------3.YOL
+// function intrange(a,b,c) {
+//     return String(a).split("").includes(".") ? false
+//          : a >= b && a < c ? true
+//          : value4;
+// }
+// console.log(intrange(4.5,3,5))
+
+    </script>
+    
+</body>
+</html>
