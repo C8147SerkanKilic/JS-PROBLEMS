@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //----------------------1.yoll
+    //     let number = () =>{
+    //         let a = Number(prompt("Bir sayı giriniz"));
+    //         // console.log(a);
+    //         function summ(a) {
+    //             let sum = 10
+    //            return sum = sum + a
+    //         };
+    //         return(summ(a))
+                
+    //     };
+    // console.log(number());
+    //----------------------2.YOL
+    const baseNum = Number(prompt("Enter a number to add 10: "));
+  
+  function makeAdder(x) {
+    return function(y) {
+     return x + y;
+    }
+  } 
+
+  let add5 =  makeAdder(10);
+
+  console.log(add5(baseNum))
+    </script>
+    
+</body>
+</html>
