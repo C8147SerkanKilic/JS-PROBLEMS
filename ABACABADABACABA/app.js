@@ -12,7 +12,9 @@ let list = ["A", "B", "C", "D", "E"]
         let result = bar(list[resultindex-1])
         // console.log(list[resultindex-1]);
         return result + i + result;
+
 }
+console.log(bar("E"));
 console.log(bar("E"));
 
 
