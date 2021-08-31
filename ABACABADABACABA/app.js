@@ -15,7 +15,6 @@ let list = ["A", "B", "C", "D", "E"]
 
 }
 console.log(bar("E"));
-console.log(bar("E"));
 
 
 // function abacabaPattern(n){
