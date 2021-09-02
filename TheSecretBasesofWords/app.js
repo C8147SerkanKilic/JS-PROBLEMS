@@ -7,17 +7,17 @@
 // const alphabet = alpha.map((x) => String.fromCharCode(x));
 // console.log(alphabet); 
 ////-------------------parseInt(string, radix)
-let letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-convektor = (a,b) =>{
-    a = prompt ("Please Enter a Word")
-//  b = prompt (Number("Enter the base number you want to convert"))
-    let c = a.toUpperCase().split("").sort()
-    console.log(c);
-    b = Number(letters.indexOf(c[c.length-1]))+11
-    console.log(b);
-return parseInt(a,b)
-}
-console.log(convektor());
+// let letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+// convektor = (a,b) =>{
+//     a = prompt ("Please Enter a Word")
+// //  b = prompt (Number("Enter the base number you want to convert"))
+//     let c = a.toUpperCase().split("").sort()
+//     console.log(c);
+//     b = Number(letters.indexOf(c[c.length-1]))+11
+//     console.log(b);
+// return parseInt(a,b)
+// }
+// console.log(convektor());
 
 // //-------------------------2.yol
 // function wordToDecimal(word) {
@@ -34,3 +34,5 @@ console.log(convektor());
 //   console.log( wordToDecimal("ZERO"));
 //   console.log( wordToDecimal("JavaScript"));
 //   console.log( wordToDecimal("Edabit"));
+//   console.log( wordToDecimal("Edabit"));
+
