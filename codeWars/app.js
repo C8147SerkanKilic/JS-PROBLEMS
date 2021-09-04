@@ -28,3 +28,4 @@ function xxx(word) {
     }
     return y
 }
+console.log(xxx);
