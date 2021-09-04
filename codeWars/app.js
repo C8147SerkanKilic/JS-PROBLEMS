@@ -6,25 +6,25 @@
 // "recede"   =>  "()()()"
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
-dublicateEncode = () =>{
-  let a = prompt("Enter your a word").toLowerCase().split("")
- let bos = ""
- for (let index = 0; index < a.length; index++) {
-     const element = array[index];     
- }
+// dublicateEncode = () =>{
+//   let a = prompt("Enter your a word").toLowerCase().split("")
+//  let bos = ""
+//  for (let index = 0; index < a.length; index++) {
+//      const element = array[index];     
+//  }
  
   
-}
-
-// function xxx(word) {
-//     let x = word.toLowerCase().split("");
-//     let y =""
-//     for (const i of x) {
-//         if (x.indexOf(i)===x.lastIndexOf(i)){
-//             y+="("
-//         }else {
-//             y+=")"
-//         }
-//     }
-//     return y
 // }
+
+function xxx(word) {
+    let x = word.toLowerCase().split("");
+    let y =""
+    for (const i of x) {
+        if (x.indexOf(i)===x.lastIndexOf(i)){
+            y+="("
+        }else {
+            y+=")"
+        }
+    }
+    return y
+}
