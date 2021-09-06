@@ -7,7 +7,12 @@
 array = [10, 5, 2, 7, 8, 7]
 let k = Number(prompt("Bir k sayısı giriniz"))
 let kk = 1 <= k & k <= (array.length) ? k : "lütfen belirtilen aralıkta bir k sayısı giriniz";
-
-
-
+// console.log(array.length);
+// console.log(kk);
 // console.log(array.sort(function(a,b){return a-b}));
+let resultarray = []
+for (let index = 0; index < array.length; index++) {
+    var element = array.slice(index,index+kk); 
+    resultarray.push(element.length == kk ? element.sort(function(a,b){return a-b})[element.length-1] :null)
+}
+console.log(resultarray); 
