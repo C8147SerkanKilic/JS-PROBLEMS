@@ -4,15 +4,16 @@
 // 8 = max(2, 7, 8)
 // 8 = max(7, 8, 7)
 
-array = [10, 5, 2, 7, 8, 7]
-let k = Number(prompt("Bir k sayısı giriniz"))
-let kk = 1 <= k & k <= (array.length) ? k : "lütfen belirtilen aralıkta bir k sayısı giriniz";
 // console.log(array.length);
 // console.log(kk);
 // console.log(array.sort(function(a,b){return a-b}));
+array = [10, 5, 2, 7, 8, 7]
+let k = Number(prompt("Bir k sayısı giriniz"))
+let kk = 1 <= k & k <= (array.length) ? k : "lütfen belirtilen aralıkta bir k sayısı giriniz";
 let resultarray = []
 for (let index = 0; index < array.length; index++) {
-    var element = array.slice(index,index+kk); 
-    resultarray.push(element.length == kk ? element.sort(function(a,b){return a-b})[element.length-1] :null)
+    let element = array.slice(index,index+kk); 
+    // resultarray.push(element.length == kk ? element.sort(function(a,b){return a-b})[element.length-1]:null)
+    element.length == kk ? resultarray.push(element.sort(function(a,b){return a-b})[element.length-1]):null
 }
 console.log(resultarray); 
