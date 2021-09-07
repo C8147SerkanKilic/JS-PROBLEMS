@@ -17,4 +17,3 @@ for (let index = 0; index < array.length; index++) {
     element.length == kk ? resultarray.push(element.sort(function(a,b){return a-b})[element.length-1]):null
 }
 console.log(resultarray); 
-console.log(resultarray); 
