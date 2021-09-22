@@ -11,10 +11,10 @@
     <form action="result.html" method="get">
         <div>
             <label for="ad">isim:</label>
-            <input type="text" name="isim" id="ad">
+            <input type="text" name="isim" id="ad" required>
             <br>
             <label for="soyad">soyad:</label>
-            <input type="text" name="soyisim" id="soyad">
+            <input type="text" name="soyisim" id="soyad" required>
         </div>
         <div>
         </div>
@@ -22,9 +22,9 @@
             <label>Cinsiyet</label><br>
         
             <label for="gender1">Erkek</label>
-            <input type="radio" name="cinsiyet" id="gender1">
+            <input type="radio" name="cinsiyet" id="gender1" value="erkek">
             <label for="gender2">Kadın</label>
-            <input type="radio" name="cinsiyet" id="gender2" checked>
+            <input type="radio" name="cinsiyet" id="gender2" value="kadın" checked >
         </div>
         <div>
             <label>Favori hayvanıızı seçiniz.</label>
@@ -42,8 +42,29 @@
                <label for="age">Age</label>
                <input type="number" name="number" id="age" max="51" min="18">
            </div>
+           <div>
+            <label for="ara">Search:</label>
+            <input type="search" name="arandı" id="ara" placeholder="ara...">
+        </div>
+        <div>
+            <label for="renk">Color</label>
+            <input type="color" name="seçilenrenk" id="renk">
+        </div>
+        <div>
+            <label for="tarih">Tarih girin:</label>
+            <input type="date" name="girilen tarih" id="tarih" min="2021-09-22">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="Girilen email" id="email" placeholder="example@example.com">
+        </div>
+        <div>
+            <label for="dosya">Dosya seç:</label>
+            <input type="file" name="Seçilen dosya" id="dosya" multiple>
+        </div>
 <br><br><br><br>
 <input type="submit" value="Send">
+<input type="reset" >
     </form>
 </body>
 </html>
