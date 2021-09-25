@@ -1,0 +1,22 @@
+
+h2{
+   background-color: chocolate;
+    margin-bottom: 0px;
+    padding: 50px;
+
+}
+#p1{
+    background-color: cyan;
+    width: 250px;
+    
+}
+#p2{
+background-color: forestgreen;
+padding: inherit;
+}
+div{
+    background-color: bisque;
+    border: 3px solid;
+    margin: 50px;
+    padding: 50px;
+}
