@@ -1,0 +1,18 @@
+#par1{
+    color: blue;
+    text-align: center;
+}
+#par2{
+    color: red;
+    text-align: right;
+}
+#par3{
+    color: salmon;
+    text-align: justify;
+}
+#par4{
+    color: rgb(120, 155,140);
+}
+#par5{
+    color: seagreen;
+}
