@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+.flex-container{
+    border: 6px solid green;
+    display: flex;
+    height: 400px;
+    /*flex-direction*/
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+}
+
+.items{
+    background-color: hotpink;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+    width: 100px;
+}
