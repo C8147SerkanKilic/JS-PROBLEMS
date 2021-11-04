@@ -11,3 +11,12 @@
 //     }
 // }
 // console.log(x);
+
+function divide(dd,dr) {
+if(isNaN(dd) || isNaN(dr)){
+    return "please enter number"
+}
+else if(dr==0){
+    return"please 
+}        
+}
