@@ -93,7 +93,6 @@ const increasedPrices = tlPrices.map((tl, i) => {
 
 console.log(increasedPrices);
 
-
 // =======================================================
 //                       FILTER
 // =======================================================
@@ -106,8 +105,86 @@ console.log(increasedPrices);
 // yeni bir diziye saklayan uygulamayı filter() ile yapınız.
 //----------------------------------------------------------------
 
-//---------------------------------Fİlter
+const coords = [-100, 150, -32, 43, -20];
+negatives = coords.filter((c) => c < 0);
 
-const coords = [-100, 150,-32,-20,10]
-negatives = coords.filter((c)=> c>=0)
-console.log(negatives);
+console.log(negatives, coords);
+
+// =======================================================
+//           FILTER,FOREACH,MAP BERABER KULLANIMI
+// =======================================================
+// Dizi iterasyon metotları ardı ardına kullanılabilir.
+// Böylelikle ardaşık bir şekilde gelip veriler işlenebilir.
+
+//---------------------------------------------------------------
+// koordinatlar dizisindeki negatif koordinatları seçerek bunları
+// pozitife çevirip konsola bastıran uygulamayı yazınız.
+//----------------------------------------------------------------
+
+const answer = coords
+  .filter((c) => c < 0)
+  .map((c) => c * -1)
+  .forEach((c) => console.log(c));
+
+//---------------------------------------------------------------
+// Bireyler disindeki kişilerden Adı "Belirtilen" harf ile başlayanları
+// seçerek ayrı bir diziye saklayan uygulamayı yazınız.
+//----------------------------------------------------------------
+
+const people = ["Mustafa", "Murat", "Mevlut", "Kerime", "Ayşe", "Can"];
+
+const selectByFirstLetter = function (letter) {
+  const bigLetter = letter.toUpperCase();
+  const filteredNames = people.filter((n) => n.startsWith(bigLetter));
+  if (!filteredNames.length) {
+    return "Person is not found";
+  } else {
+    return filteredNames;
+  }
+};
+console.log(selectByFirstLetter("m"));
+console.log(selectByFirstLetter("M"));
+console.log(selectByFirstLetter("A"));
+console.log(selectByFirstLetter("z"));
+
+//---------------------------------------------------------------
+// Aşağıdaki formata göre bireyler dizisindeki her bir elemanın
+// uzunluğunu sıralı olarak yazdıran uygulamayı yazınız.
+//  Can: 3
+//  Ayşe: 4
+//  Murat: 5  v.b.
+//---------------------------------------------------------------
+
+// =======================================================
+//                   REDUCE KULLANIMI
+// =======================================================
+// reduce metodunu diziden tek bir değer elde etmek için kullanırız.
+// Örneğin dizinin toplam değeri gibi.
+// reduce(toplam, şuankideğer, indeks, dizi) şeklinde dört adet parametre
+// alabilir. Bunlardan ilk ikisi zorunludur.
+
+//---------------------------------------------------------------
+// Koordinatlar dizisindeki değerlerin toplamını hesaplayarak
+// konsola bastıran uygulamayı reduce() ile yazınız.
+//----------------------------------------------------------------
+
+// * const coords = [-100, 150, -32, 43, -20];
+
+console.log(coords.reduce((x, y) => x + y));
+
+//---------------------------------------------------------------
+// Koordinatlar dizisindeki değerlerin ortalamasını hesaplayarak
+// konsola bastıran uygulamayı reduce() ile yazınız.
+//----------------------------------------------------------------
+const avg = coords.reduce((x, y) => x + y) / coords.length;
+console.log("Koordinatların Ortalaması:" + avg);
+
+// =======================================================
+//             FILTER,MAP,REDUCE BERABER KULLANIMI
+// =======================================================
+//---------------------------------------------------------------
+// Firma, 3000 TL den az olan maaşlara %10 zam yapmak istiyor
+// ve zam yapılan bu kişilere toplam kaç TL ödeneceğini bilmek
+// istiyor. İlgili programı yazınız.
+//----------------------------------------------------------------
+const salaries = [3000, 2891, 3500, 4200, 7000, 2500];
