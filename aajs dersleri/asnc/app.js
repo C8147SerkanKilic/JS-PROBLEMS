@@ -113,14 +113,14 @@ function cayDemle() {
       }
     });
   }
-  // function demEkle() {
-  //   return new Promise((resolve, reject) => {
-  //     const cayMevcut = !Math.floor(Math.random() * 2);
-  //     if (cayMevcut) {
-  //       wait(1000);
-  //       resolve('cay eklendi');
-  //     } else {
-  //       reject('cay bitmiş');
-  //     }
-  //   });
-  // }
+   function demEkle() {
+    return new Promise((resolve, reject) => {
+      const cayMevcut = !Math.floor(Math.random() * 2);
+      if (cayMevcut) {
+        wait(1000);
+        resolve('cay eklendi');
+      } else {
+        reject('cay bitmiş');
+      }
+    });
+  }
