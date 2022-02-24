@@ -3,6 +3,7 @@ let perimeter = (a,b) =>{
 }
 console.log(perimeter("c",1));
 
+console.log(perimeter("c",1));
 
 
 
